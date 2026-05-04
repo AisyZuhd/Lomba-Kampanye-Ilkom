@@ -1,38 +1,16 @@
 <!DOCTYPE html>
 <html lang="id">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tentang Kami - Pandeka Alam</title>
+    <title>Kontribusi - Pandeka Alam</title>
     <!-- Fonts -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <!-- AOS Animation CSS -->
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
-    <style>
-        .about-bg {
-            background-image: url('https://picsum.photos/seed/forestbg/1920/1080');
-            background-size: cover;
-            background-attachment: fixed;
-            background-position: center;
-            position: relative;
-        }
-
-        .about-bg::before {
-            content: '';
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            background: rgba(255, 255, 255, 0.85);
-            /* Light overlay for readability */
-        }
-    </style>
 </head>
-
-<body class="about-bg">
+<body>
 
     <!-- Navbar -->
     <nav class="navbar">
@@ -47,102 +25,57 @@
                 <li><a href="index.html">Beranda</a></li>
                 <li><a href="program.html">Program</a></li>
                 <li><a href="laporan.html">Laporan</a></li>
-                <li><a href="about.html" class="active">Tentang Kami</a></li>
+                <li><a href="about.html">Tentang Kami</a></li>
                 <li><a href="donasi.html" class="btn btn-primary text-white">Kontribusi</a></li>
             </ul>
         </div>
     </nav>
 
-    <div style="position: relative; z-index: 10;">
-        <!-- Page Header -->
-        <header class="py-5" style="padding-top: 150px; padding-bottom: 50px;">
-            <div class="container text-center" data-aos="fade-up">
-                <h1>Cerita di Balik Daun</h1>
-                <p style="max-width: 600px; margin: 0 auto;">Kami adalah sekumpulan pemuda yang percaya bahwa menjaga
-                    alam bukanlah sebuah pilihan, melainkan sebuah kewajiban.</p>
-            </div>
-        </header>
+    <!-- Page Header -->
+    <header class="py-5 bg-green" style="padding-top: 120px; padding-bottom: 100px;">
+        <div class="container text-center text-white" data-aos="fade-up">
+            <h1 class="text-white">Satu Pohon dari Banyak Orang</h1>
+            <p class="text-white" style="opacity: 0.9; max-width: 600px; margin: 0 auto;">Tidak peduli seberapa kecil nominalnya, jika dikumpulkan bersama, kita bisa menumbuhkan hutan yang lebat.</p>
+        </div>
+    </header>
 
-        <!-- Tim Kami & FAQ -->
-        <style>
-            .about-grid {
-                display: grid;
-                grid-template-columns: 1fr 1.5fr;
-                gap: 50px;
-                align-items: stretch;
-            }
-
-            @media (max-width: 768px) {
-                .about-grid {
-                    grid-template-columns: 1fr;
-                }
-            }
-        </style>
-        <section class="py-5">
-            <div class="container">
-                <div class="about-grid mb-5">
-                    <div data-aos="fade-right" style="height: 100%;">
-                        <img src="image/Tim.webp" alt="Tim Relawan"
-                            style="border-radius: 16px; box-shadow: var(--shadow-lg); border: 8px solid white; width: 100%; height: 100%; object-fit: cover;">
-                    </div>
-                    <div data-aos="fade-left">
-                        <h2 class="mb-3">Kenali Pandeka Alam</h2>
-                        <p><strong>Pandeka Alam</strong> lahir dari keresahan melihat maraknya deforestasi. Kami
-                            menginisiasi gerakan penanaman pohon yang melibatkan partisipasi publik.</p>
-
-                        <div class="mt-4"
-                            style="background: white; padding: 20px; border-radius: 12px; border-left: 5px solid var(--green-light);">
-                            <h4 style="margin-bottom: 5px; color: var(--green-dark);">Visi Kami</h4>
-                            <p style="margin: 0; font-size: 0.95rem;">Menghijaukan kembali 1 Juta Hektar lahan kritis di
-                                Indonesia sebelum tahun 2030, sembari memberdayakan ekonomi masyarakat sekitar hutan.
-                            </p>
-                        </div>
-                        <div class="mt-4"
-                            style="background: white; padding: 20px; border-radius: 12px; border-left: 5px solid var(--green-light);">
-                            <h4 style="margin-bottom: 5px; color: var(--green-dark);">Misi Kami</h4>
-                            <p style="margin: 0; font-size: 0.95rem;">• Mendorong kesadaran dan kepedulian masyarakat
-                                terhadap lingkungan <br>• Mengimplementasikan program pemulihan ekosistem berbasis
-                                komunitas <br>• Menyediakan sistem kontribusi yang transparan dan akuntabel <br>•
-                                Membangun kolaborasi dengan berbagai pihak </p>
-                        </div>
-                    </div>
+    <!-- Kontribusi Section -->
+    <section class="bg-light pb-5">
+        <div class="container">
+            
+            <div class="slider-container" data-aos="zoom-in">
+                <div class="tree-illustration">
+                    <!-- Ilustrasi 1 Pohon besar -->
+                    <img src="https://picsum.photos/seed/tree/300/300" alt="Pohon Besar" style="border-radius: 50%; width: 150px; height: 150px; object-fit: cover; border: 5px solid var(--green-light);">
+                    <p class="mt-4 text-center" style="font-weight: 500;">Setiap <strong>Rp 100</strong> setara dengan 1 Bibit Pohon tertanam.</p>
                 </div>
 
-                <!-- Bagian FAQ -->
-                <div data-aos="fade-up"
-                    style="max-width: 800px; margin: 60px auto 0; padding-top: 40px; border-top: 1px solid rgba(0,0,0,0.1);">
-                    <h2 class="text-center mb-4">Pertanyaan Umum</h2>
+                <form id="donasi-form" onsubmit="event.preventDefault(); window.location.href='pembayaran.html';">
+                    
+                    <h3 class="mb-4 text-center">Tentukan Kontribusi Anda</h3>
+                    
+                    <div class="slider-value-display" id="display-value">Rp 10.000</div>
+                    <div class="tree-equivalent" id="tree-count">100 Pohon</div>
 
-                    <div class="faq-item"
-                        style="background: white; border-radius: 8px; margin-bottom: 10px; padding: 15px; box-shadow: var(--shadow-sm);">
-                        <div class="faq-question" style="font-weight: bold; color: var(--green-dark);">
-                            Berapa harga 1 bibit pohon?
-                        </div>
-                        <div class="faq-answer" style="color: var(--gray-text); margin-top: 10px;">
-                            Standar biaya untuk 1 bibit pohon adalah Rp 20.000. Biaya ini sudah mencakup proses
-                            pembibitan, biaya tanam oleh warga lokal, serta perawatan pasca tanam selama 1 tahun
-                            pertama.
-                        </div>
+                    <input type="range" min="100" max="1000000" step="100" value="10000" class="slider" id="nominal-slider">
+                    
+                    <div style="display: flex; justify-content: space-between; color: var(--gray-text); font-size: 0.85rem;">
+                        <span>Min: Rp 100</span>
                     </div>
 
-                    <div class="faq-item"
-                        style="background: white; border-radius: 8px; margin-bottom: 10px; padding: 15px; box-shadow: var(--shadow-sm);">
-                        <div class="faq-question" style="font-weight: bold; color: var(--green-dark);">
-                            Apakah saya bisa melacak pohon yang saya tanam?
-                        </div>
-                        <div class="faq-answer" style="color: var(--gray-text); margin-top: 10px;">
-                            Ya! Setiap kontribusi Anda akan kami berikan laporan berkala berupa foto pertumbuhan pohon
-                            dan titik koordinat lahan tempat pohon tersebut ditanam.
-                        </div>
-                    </div>
-                </div>
+                    <hr style="margin: 30px 0; border: 0; border-top: 1px solid #e5e7eb;">
 
+                    <button type="submit" class="btn btn-primary mt-4" style="width: 100%; font-size: 1.1rem; padding: 15px;">
+                        Mulai Berkontribusi <i class="fas fa-arrow-right"></i>
+                    </button>
+                    
+                </form>
             </div>
-        </section>
-    </div>
+        </div>
+    </section>
 
     <!-- Footer -->
-    <footer class="footer" style="position: relative; z-index: 10;">
+    <footer class="footer">
         <div class="container text-center">
             <h3 class="text-white mb-3"><i class="fas fa-leaf"></i> Pandeka Alam</h3>
             <p style="margin-top: 20px; font-size: 0.8rem; color: #6ee7b7;">&copy; 2026 Pandeka Alam.</p>
@@ -156,5 +89,6 @@
     </script>
     <script src="script.js"></script>
 </body>
-
 </html>
+
+
