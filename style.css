@@ -251,7 +251,7 @@ a {
     position: relative;
     width: 100%;
     margin: 0 auto;
-    background: var(--white) url('../image/Peta.webp') no-repeat center;
+    background: var(--white) url('Peta.webp') no-repeat center;
     background-size: cover; /* cover akan membuat gambar memenuhi kotak */
     height: 500px;
     border-radius: 16px;
