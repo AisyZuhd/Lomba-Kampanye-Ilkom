@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pembayaran - Pandeka Alam</title>
+    <!-- Fonts -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- AOS Animation CSS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="container">
+            <a href="index.html" class="navbar-brand">
+                <i class="fas fa-leaf"></i> Pandeka Alam
+            </a>
+            <div class="nav-toggle" id="nav-toggle">
+                <i class="fas fa-bars"></i>
+            </div>
+            <ul class="nav-links" id="nav-links">
+                <li><a href="index.html">Beranda</a></li>
+                <li><a href="program.html">Program</a></li>
+                <li><a href="laporan.html">Laporan</a></li>
+                <li><a href="about.html">Tentang Kami</a></li>
+                <li><a href="donasi.html" class="btn btn-primary text-white">Kontribusi</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <header class="py-5 bg-green" style="padding-top: 120px; padding-bottom: 80px;">
+        <div class="container text-center text-white" data-aos="fade-up">
+            <h1 class="text-white">Pilih Metode Pembayaran</h1>
+            <p class="text-white" style="opacity: 0.9;">Langkah terakhir untuk mewujudkan hutan impian kita.</p>
+        </div>
+    </header>
+
+    <!-- Pembayaran Section -->
+    <section class="bg-light pb-5">
+        <div class="container">
+            <div class="slider-container" data-aos="zoom-in" style="max-width: 600px; margin: -50px auto 50px;">
+                
+                <form id="payment-form" onsubmit="event.preventDefault(); alert('Terima kasih! Pembayaran Anda sedang diproses.'); window.location.href='laporan.html';">
+                    
+                    <div style="margin-bottom: 30px;">
+                        <label style="font-weight: 600; display: block; margin-bottom: 10px; color: var(--green-dark);">Pilih Metode Pembayaran</label>
+                        <select class="form-control" style="width: 100%; padding: 15px; border-radius: 8px; border: 1px solid #ccc; font-family: 'Inter', sans-serif;" required>
+                            <option value="">-- Silakan Pilih --</option>
+                            <option value="qris">QRIS (GoPay, OVO, Dana, LinkAja)</option>
+                            <option value="bca">BCA Virtual Account</option>
+                            <option value="mandiri">Mandiri Virtual Account</option>
+                            <option value="bni">BNI Virtual Account</option>
+                            <option value="bri">BRI Virtual Account</option>
+                        </select>
+                    </div>
+
+                    <div style="background: var(--gray-bg); padding: 20px; border-radius: 8px; text-align: center; margin-bottom: 30px;">
+                        <i class="fas fa-qrcode" style="font-size: 5rem; color: var(--green-dark); margin-bottom: 15px;"></i>
+                        <p style="font-size: 0.9rem; color: var(--gray-text);">QR Code / Nomor VA akan muncul setelah Anda klik tombol bayar di bawah.</p>
+                    </div>
+
+                    <button type="submit" class="btn btn-primary" style="width: 100%; font-size: 1.1rem; padding: 15px;">
+                        Selesaikan Pembayaran <i class="fas fa-check-circle"></i>
+                    </button>
+                    
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container text-center">
+            <h3 class="text-white mb-3"><i class="fas fa-leaf"></i> Pandeka Alam</h3>
+            <p style="margin-top: 20px; font-size: 0.8rem; color: #6ee7b7;">&copy; 2026 Pandeka Alam.</p>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+    <script src="js/script.js"></script>
+</body>
+</html>
+
+

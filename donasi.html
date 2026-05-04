@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kontribusi - Pandeka Alam</title>
+    <!-- Fonts -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- AOS Animation CSS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="container">
+            <a href="index.html" class="navbar-brand">
+                <i class="fas fa-leaf"></i> Pandeka Alam
+            </a>
+            <div class="nav-toggle" id="nav-toggle">
+                <i class="fas fa-bars"></i>
+            </div>
+            <ul class="nav-links" id="nav-links">
+                <li><a href="index.html">Beranda</a></li>
+                <li><a href="program.html">Program</a></li>
+                <li><a href="laporan.html">Laporan</a></li>
+                <li><a href="about.html">Tentang Kami</a></li>
+                <li><a href="donasi.html" class="btn btn-primary text-white">Kontribusi</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <header class="py-5 bg-green" style="padding-top: 120px; padding-bottom: 100px;">
+        <div class="container text-center text-white" data-aos="fade-up">
+            <h1 class="text-white">Satu Pohon dari Banyak Orang</h1>
+            <p class="text-white" style="opacity: 0.9; max-width: 600px; margin: 0 auto;">Tidak peduli seberapa kecil nominalnya, jika dikumpulkan bersama, kita bisa menumbuhkan hutan yang lebat.</p>
+        </div>
+    </header>
+
+    <!-- Kontribusi Section -->
+    <section class="bg-light pb-5">
+        <div class="container">
+            
+            <div class="slider-container" data-aos="zoom-in">
+                <div class="tree-illustration">
+                    <!-- Ilustrasi 1 Pohon besar -->
+                    <img src="https://picsum.photos/seed/tree/300/300" alt="Pohon Besar" style="border-radius: 50%; width: 150px; height: 150px; object-fit: cover; border: 5px solid var(--green-light);">
+                    <p class="mt-4 text-center" style="font-weight: 500;">Setiap <strong>Rp 20.000</strong> setara dengan 1 Bibit Pohon tertanam.</p>
+                </div>
+
+                <form id="donasi-form" onsubmit="event.preventDefault(); window.location.href='pembayaran.html';">
+                    
+                    <h3 class="mb-4 text-center">Tentukan Kontribusi Anda</h3>
+                    
+                    <div class="slider-value-display" id="display-value">Rp 100.000</div>
+                    <div class="tree-equivalent" id="tree-count">5 Pohon</div>
+
+                    <input type="range" min="10000" max="1000000" step="10000" value="100000" class="slider" id="nominal-slider">
+                    
+                    <div style="display: flex; justify-content: space-between; color: var(--gray-text); font-size: 0.85rem;">
+                        <span>Min: Rp 10.000</span>
+                    </div>
+
+                    <hr style="margin: 30px 0; border: 0; border-top: 1px solid #e5e7eb;">
+
+                    <button type="submit" class="btn btn-primary mt-4" style="width: 100%; font-size: 1.1rem; padding: 15px;">
+                        Mulai Berkontribusi <i class="fas fa-arrow-right"></i>
+                    </button>
+                    
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container text-center">
+            <h3 class="text-white mb-3"><i class="fas fa-leaf"></i> Pandeka Alam</h3>
+            <p style="margin-top: 20px; font-size: 0.8rem; color: #6ee7b7;">&copy; 2026 Pandeka Alam.</p>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+    <script src="js/script.js"></script>
+</body>
+</html>
+
+
