@@ -34,8 +34,8 @@ document.addEventListener('DOMContentLoaded', () => {
     const slider = document.getElementById('nominal-slider');
     const displayValue = document.getElementById('display-value');
     const treeCount = document.getElementById('tree-count');
-    // Harga 1 pohon = Rp 20.000
-    const PRICE_PER_TREE = 20000;
+    // Harga 1 pohon = Rp 100
+    const PRICE_PER_TREE = 100;
 
     if (slider && displayValue && treeCount) {
         slider.addEventListener('input', function() {
